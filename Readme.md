@@ -122,3 +122,21 @@ https://ms-productos-ou6h.onrender.com
 
 ### Tabla de productos en Neon
 ![Tabla de productos en Neon](./evidencias/tabla-neon.png)
+
+
+## 9. Evidencias ya Desplegada
+
+### Listar productos
+![img.png](evidencias/img.png)
+
+### Buscar producto por ID
+![img.png](evidencias/id.png)
+
+### Actualizar producto
+
+![img.png](evidencias/update.png)
+### Eliminar producto
+![img.png](evidencias/delete.png)
+### Despliegue en render
+
+![img.png](evidencias/despliegue.png)
