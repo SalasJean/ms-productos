@@ -6,20 +6,17 @@
 
 ---
 
-## 2. Descripción breve del microservicio
+## 2. Descripción
 
-Microservicio encargado de la gestión de productos.
-
-Permite realizar operaciones CRUD:
+Microservicio encargado de la gestión de productos. Expone una API REST que permite realizar las siguientes operaciones CRUD:
 
 - Crear productos
 - Listar productos
 - Buscar productos por ID
 - Actualizar productos
-- Actualizar productos
 - Eliminar productos
 
-Este servicio está desarrollado con arquitectura basada en microservicios usando Spring Boot.
+El servicio está desarrollado bajo una arquitectura de microservicios con Spring Boot.
 
 ---
 
@@ -52,14 +49,14 @@ Este servicio está desarrollado con arquitectura basada en microservicios usand
 
 | Variable | Descripción |
 |---|---|
-| DB_URL | URL de conexión a PostgreSQL |
-| DB_USERNAME | Usuario de la base de datos |
-| DB_PASSWORD | Contraseña de la base de datos |
-| PORT | Puerto donde se ejecutará el servicio |
+| `DB_URL` | URL de conexión a PostgreSQL |
+| `DB_USERNAME` | Usuario de la base de datos |
+| `DB_PASSWORD` | Contraseña de la base de datos |
+| `PORT` | Puerto donde se ejecutará el servicio |
 
 ---
 
-## 6. Instrucciones para ejecutar en local
+## 6. Instrucciones para ejecución en local
 
 ### Requisitos previos
 
@@ -70,44 +67,58 @@ Este servicio está desarrollado con arquitectura basada en microservicios usand
 
 ### Pasos
 
-1. Clonar el repositorio
+1. Clonar el repositorio:
 
-## 7. Evidencias
-Crear producto
-![img.png](img.png)
-Listar productos
-![img_1.png](img_1.png)
-Buscar por ID
-![img_2.png](img_2.png)
-Actualizar producto
-![img_3.png](img_3.png)
-Eliminar producto
-![img_4.png](img_4.png)
-Mala Peticion
-![img_5.png](img_5.png)
-Tabla en Neon
-![img_6.png](img_6.png)
-9. URL del servicio desplegado
-   https://ms-productos-xxxx.onrender.com
+   ```bash
+   git clone https://github.com/usuario/ms-productos.git
+   ```
 
+2. Ingresar al directorio del proyecto:
+
+   ```bash
+   cd ms-productos
+   ```
+
+3. Configurar las variables de entorno necesarias.
+
+4. Compilar el proyecto:
+
+   ```bash
+   mvn clean install
+   ```
+
+5. Ejecutar el microservicio:
+
+   ```bash
+   mvn spring-boot:run
+   ```
 
 ---
-Despliegue
-```8. bash
-git clone https://github.com/usuario/ms-productos.git
 
-Ingresar al proyecto
+## 7. URL del servicio desplegado
 
-cd ms-productos
+https://ms-productos-ou6h.onrender.com
+---
 
-Configurar las variables de entorno
+## 8. Evidencias
 
-Compilar el proyecto
+### Crear producto
+![Crear producto](./evidencias/crear-producto.png)
 
-mvn clean install
+### Listar productos
+![Listar productos](./evidencias/listar-productos.png)
 
-Ejecutar el microservicio
+### Buscar producto por ID
+![Buscar producto por ID](./evidencias/buscar-por-id.png)
 
-mvn spring-boot:run
+### Actualizar producto
+![Actualizar producto](./evidencias/actualizar-producto.png)
 
+### Eliminar producto
+![Eliminar producto](./evidencias/eliminar-producto.png)
 
+### Petición incorrecta
+![Petición incorrecta](./evidencias/peticion-incorrecta.png)
+
+### Tabla de productos en Neon
+![Tabla de productos en Neon](./evidencias/tabla-neon.png)
